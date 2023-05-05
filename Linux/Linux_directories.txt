@@ -1,0 +1,15 @@
+*Home directories : /root, /home, /username
+
+*User executables : /bin, /usr/bin, /usr/local/bin
+
+*configuration : /etc
+
+*temporary files : /temp
+
+*kernal and bootloaders : /boot
+
+*shared libraries : /lib, /usr/lib, /usr/local/lib
+
+*server date : /var, /srv
+
+etc....

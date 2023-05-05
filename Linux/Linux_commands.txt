@@ -1,0 +1,89 @@
+########################################################################
+BASIC COMMANDS
+###################
+
+# whoami, pwd, ls, cat<filename>
+
+# to know which operating system using : cat /etc/os-release
+
+# to come root user from any user : sudo -i
+
+# to goto root directory : cd/
+
+# mkdir, rmdir, touch, cp, --help, mv, *, rm, 
+
+# vim editor ::  i, :q!, :wq, /<searching> , 
+
+
+
+
+
+
+
+########################################################################
+FILTER COMMANDS
+###############
+
+# grep <search> <filepath>  ( case sensitive)
+
+# grep -i <search> <filepath>   (case insensitive)
+       -v         (don't search)
+
+# less <file path> 	(reader)
+
+# more <filepath>	(reader)
+
+# head <filepath>	(to see first 10 lines)
+
+# head -20 <filepath> 	(to see first 20 lines)
+
+# tail <filepath>	(to see last 10 lines)
+
+# tail -20 <filepath> 	(to see last 20 lines)
+
+# tail -f <filepath>	(to see changes in real time)
+
+# cut -d: -f1 <filepath 	(to get what info we want ) (in f1 means 1st colume)
+
+# awk '{print $1}' <filepath> 	(same as cut)
+
+# sed 's/word1/word2/g' <filepath>	(find word1 and replace by word2 globally. It only prints not changes the file)
+
+# sed -i 's/word1/word2/g' <filepath> 	(chan ges in the file also)
+
+
+
+
+
+
+
+######################################################################################
+REDIRECTION
+#####################
+
+# file1 > file2 	(the output of file1 goes to file2 by overriding)
+
+# file1 >> file2	(the output of file1 goes to file2 by appending)
+
+# /dev/null (Blackhole) anything we place here it will be gone.
+
+
+
+##################################################################################################
+PIPING
+############
+
+# wc -l <filename>	(Displays number of lines in filename)
+
+# ls | wc -l 		(the output of ls is given to wc -l as input)
+
+
+
+#################################################################################################
+FINDING
+##############
+
+# find <path> -name <filename>	(find filename in the path)
+
+
+
