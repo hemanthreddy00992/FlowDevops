@@ -1,0 +1,1 @@
+with virtualization we can create multiple computers of cpus with 1 computer.
