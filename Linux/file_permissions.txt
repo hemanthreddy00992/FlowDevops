@@ -1,0 +1,21 @@
+<filename> <user><group><others>
+	   rwx	 rwx	 rwx
+
+r->4
+w->2
+x->1
+
+
+-to chnage permission :: chmod ugo <path>
+
+ugo : users group others
+
+
+--examples
+ o-x -> remove execute permission to others
+ o+r -> giving read permissions to other
+
+ (or)
+
+ 777 -> giving read write and execute permissions to users,groups,others
+ 466 -> giving read to users, read and write to groups , read and write to others

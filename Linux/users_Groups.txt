@@ -1,0 +1,40 @@
+###################################################################
+USERS and GROUPS
+#################
+
+# each user has unique user id (UID)
+
+# user name and UID stored in /etc/passwd
+
+# user password stored in /etc/shadow
+
+# users are assigned to home directory
+
+# to view groups /etc/groups
+
+# Adding a user -- useradd <username>
+
+# id <username>		(Detaied info of user)
+
+# to create group -- groupadd <groupname>
+
+# to keep user in specific group -- usermod -aG <groupname> <username>
+
+# Another way to add users to groups -> vim /etc/group -> search for group and add manually infront of group.
+
+# passwd <username> 	(setting password for username or to reset the password)
+
+# If you are root user then you will login to any user without password -- su - <username>
+
+# last  -- To see all the users who login
+
+# who  -- To see the current login user
+
+# lsof -u <username> 	to see how many files did the user opened
+
+# userdel <username> 	To delete a user,but group still exits
+
+# userdel -r <username> 	to delete user wholely
+
+# groupdel <groupname> 	To delete a group
+
