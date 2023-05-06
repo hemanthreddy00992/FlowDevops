@@ -1,0 +1,10 @@
+
+systemctl status <pakagename>  To check if the status is active or not.
+systemctl start <pakagename>
+systemctl stop <pakagename>
+systemctl restart <pakagename>
+systemctl reload <pakagename>
+systemctl is-active <pakagename>
+
+
+

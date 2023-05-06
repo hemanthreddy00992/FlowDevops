@@ -1,0 +1,9 @@
+Archive -- User to store the files.
+
+tar -czvf <filename>	(To create a tar file)
+tar -xzvf <filename>	(To extract a tar file)
+tar -tvf <filename>	(to list all archive files)
+
+
+zip -r <filename> 	(Top create a zip file)
+unzip <filename.zip>	(To Unzip)

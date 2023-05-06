@@ -1,0 +1,11 @@
+
+top 	(shows the dynamic processes)
+
+ps aux	(similar to top)
+
+ps -ef	(shows the processes, similar to top)
+
+kill <PPID> 	(to kill the process (PPID-parent process id))
+
+kill -9 <PPID> 	(Force kill)
+
