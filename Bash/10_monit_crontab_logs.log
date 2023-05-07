@@ -1,0 +1,23 @@
+This is done by crontab jobs
+(crontab -e 
+  * * * * * 10_monit.sh >> 10_monit_crontab_logs.log
+)
+
+
+
+#################################################
+Sun May  7 13:39:01 UTC 2023
+/var/run/apache2/apache2.pid
+apache2 process is running.
+
+#########################################################################
+
+
+#################################################
+Sun May  7 13:40:01 UTC 2023
+apache2 process is not running.
+Starting apache2 process.
+apache2 process started sucessfully.
+
+#########################################################################
+
