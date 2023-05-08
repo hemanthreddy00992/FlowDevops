@@ -1,0 +1,95 @@
+* git init : create/initialize empty git repository ( "ls -a" you see a repository/folder of .git)
+			.git repository is responsible for tracking and many things
+
+* git status : to see what is happening in repository
+
+* git add <file name>  : Adding file to the git .This point is called staging . ( "git add ." for adding all files at a time)
+
+* git commit -m "Here give message "  : This will made changes to the code after adding. ( Here there is possibility of giving user name and emilid )
+
+* git log : shows all the commits.
+
+* git log --oneline  : show all commits with simple notations
+
+* git show <commit id>  : shows the content of the commit id given
+
+* git remote -v  : asking what is my remote reference. so that we came to know if we have remote reference or not. git push doesn't work if there is no remote ref.
+
+* git remote add "github.com/[username]/[repository name] "  :  providing the remote reference
+
+* git push : to push changes to the remote ref
+
+* git pull : to pull changes from the remote ref
+
+
+-----------git branches---------------
+
+* git branch -c <branch name>  : to create new branch
+
+* git branch -a  : to list all branches
+
+* git checkout <branch name>  : To change the branch
+
+* git switch <branch name>  : To change the branch
+
+* git merge <file name>  : To merge the file with the current branch ( merged commit will show at top in all the commits)(for many commits)
+
+* git rebase <file name>  : To merge the file with the current branch ( merged commit will show below the current working commit )(for many commits)
+
+* git cherry-pick <file name> : To merge the file with the current branch ( used for merging 1 or 2 commits only not for more commits)
+
+
+
+
+---------------git clone-------------------
+
+* git clone <html/ssh link>  : will clone the repo from remote to local
+
+   -> for using html link password(github password) is required. for using ssh link public key is required.
+   -> ( "ssh -keygen.exe" will generate the public and private keys. Take the public key and place it in the github keys)
+
+
+
+----------------git rollback-------------------
+
+* git checkout  : rollback from previous change before the commit stage
+
+* git checkout <filename> : rollback from previous change of the file before the commit stage
+
+* git diff : it will shows what are the changes we made from previous commit.
+
+* git diff <commit1 id >..<commit2 id>  : It will show the changes in the two commits
+
+* git restore --staged <filename>  : to rollback after staging has done ( after git add)
+
+* git revert <commit id>  : Rollback after commit has done (but revert is stored in the commit ids)
+
+* git revert HEAD : Rollback after commit has done (but revert is stored in the commit ids)
+
+* git reset --hard <commit id> : Rollback after commit has done and commit is is not stored.
+
+
+
+
+
+--------------------------Q/A----------------------------------------
+
+* git work flow ->  (git add && git commit -m "" && git push)
+
+* How to pull code from github  : git clone
+
+* Difference between git clone and git fork  : fork is the copy of the repo, clone is the download of the repo.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
