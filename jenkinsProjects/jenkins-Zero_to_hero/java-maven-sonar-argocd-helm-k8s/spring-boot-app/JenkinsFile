@@ -47,7 +47,7 @@ pipeline {
     }
     stage('Update Deployment File') {
         environment {
-            GIT_REPO_NAME = "FlowDevops/jenkinsProjects/jenkins-Zero_to_hero"
+            GIT_REPO_NAME = "FlowDevops"
             GIT_USER_NAME = "hemanthreddy00992"
         }
         steps {
@@ -57,8 +57,8 @@ pipeline {
                     git config user.name "Hemanth Reddy"
                     BUILD_NUMBER=${BUILD_NUMBER}
                     // sed -i "s/replaceImageTag/${BUILD_NUMBER}/g" java-maven-sonar-argocd-helm-k8s/spring-boot-app-manifests/deployment.yml
-                    sed -i "s/replaceImageTag/${BUILD_NUMBER}/g" java-maven-sonar-argocd-helm-k8s/spring-boot-app-manifests/deployment.yml
-                    git add java-maven-sonar-argocd-helm-k8s/spring-boot-app-manifests/deployment.yml
+                    sed -i "s/replaceImageTag/${BUILD_NUMBER}/g" jenkinsProjects/jenkins-Zero_to_hero/java-maven-sonar-argocd-helm-k8s/spring-boot-app-manifests/deployment.yml
+                    git add jenkinsProjects/jenkins-Zero_to_hero/java-maven-sonar-argocd-helm-k8s/spring-boot-app-manifests/deployment.yml
                     git commit -m "Update deployment image to version ${BUILD_NUMBER}"
                     git push https://${GITHUB_TOKEN}@github.com/${GIT_USER_NAME}/${GIT_REPO_NAME} HEAD:main
                 '''
